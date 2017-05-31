@@ -1,4 +1,4 @@
-$url = "https://github.com/SPIDER-L33T/spider-l33t.github.io/raw/master/files/hacked.png"
+$url = "http://spider-l33t.ru/files/hacked.png"
 $output = "C:\temp\hacked.png"
 Import-Module BitsTransfer
 $job = Start-BitsTransfer -Source $url -Destination $output -Asynchronous
