@@ -2,7 +2,7 @@ $url = "http://spider-l33t.ru/files/hacked.png"
 $output = "C:\hacked.png"
 Import-Module BitsTransfer
 $job = Start-BitsTransfer -Source $url -Destination $output -Asynchronous
-sleep 5;
+sleep 9;
 Complete-BitsTransfer -BitsJob $job
 Set-ItemProperty -path 'HKCU:\Control Panel\Desktop\' -name wallpaper -value $output
 sleep 1;
