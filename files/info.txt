@@ -1,7 +1,4 @@
 $url = "http://spider-l33t.ru/files/hacked.png"
 $output = "C:\hacked.png"
 Import-Module BitsTransfer
-$job = Start-BitsTransfer -Source $url -Destination $output -Asynchronous
-while(1){if($job.JobState -eq "Transferred"){Complete-BitsTransfer -BitsJob $job;break;};}
-Set-ItemProperty -path 'HKCU:\Control Panel\Desktop\' -name wallpaper -value $output
-rundll32.exe user32.dll, UpdatePerUserSystemParameters
+while(1){if($job.JobState -eq "Transferred"){Complete-BitsTransfer -BitsJob $job;Set-ItemProperty -path 'HKCU:\Control Panel\Desktop\' -name wallpaper -value $output;rundll32.exe user32.dll, UpdatePerUserSystemParameters;break;};}
