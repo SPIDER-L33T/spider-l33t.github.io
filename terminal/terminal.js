@@ -131,6 +131,34 @@
       return out.join("\n");
     },
 	
+	get: function(key) {
+		key = key || '';
+		var out = [];
+	  
+		switch ( key.toLowerCase() ) {
+        case 'kms' :
+          window.open('https://mega.nz/#!Ad8VwYRI!EpvfXtywjftXnF-_UG1FUpGjI038k88FbhXc-KQm2C0');
+          break;
+		case 'antivirus' :
+          window.open('https://mega.nz/#F!NJk0FJJA!jLEa1uJBXU7yNiDHaD2IBA');
+          break
+		  
+		default :
+          if ( key.length ) {
+            out = ['Invalid key: ' + key];
+          } else {
+            out = [
+              "Available files:\n",
+              'kms:       KMS activator',
+              'antivirus: ESET antivirus'
+            ];
+          }
+          break;
+		}
+		
+		return out.join("\n");
+	},
+	
 	about: function(){
 		var out = [
 		'My name is Alexander.',
@@ -179,6 +207,7 @@
         'ls ..............................................List current (or given) directory contents',
         'cd <dir> ....................................Enter directory',
         'cat <filename> .........................Show file contents',        
+		'get <filename> .........................Get file from web',
         ''
       ];
 
