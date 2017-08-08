@@ -483,7 +483,7 @@ print("╚══════╝╚═╝░░░░░╚═╝╚════�
     print("\n\n\n", true);
     print(padCenter("Old School info-terminal\n", 113), true);
     print("\n\n\n\n\n", true);
-    print("Please enter 'help' for a list of available commands.\n", true);
+    print("Please type 'help' for a list of available commands.\n", true);
     print("\n\n" + _prompt());
   };
 })();
