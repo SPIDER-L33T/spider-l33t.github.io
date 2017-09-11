@@ -48,42 +48,42 @@
         }
       }
 
-      out.push(format("\n{0} file(s) in total, {1} byte(s)", count, total));
+      out.push(format("\n{0} файл(а/ов), всего {1} байт", count, total));
 
       return out.join("\n");
     },
 
     cd: function(dir) {
       if ( !dir ) {
-        return (["You need to supply argument: dir"]).join("\n");
+        return (["Вы должны указать аргумент: директория"]).join("\n");
       }
 
       var dirname = parsepath(dir);
       var iter = getiter(dirname);
       if ( dirname == '/' || (iter && iter.type == 'dir')) {
         _cwd = dirname;
-        return (['Entered: ' + dirname]).join("\n");
+        return (['Вошли в: ' + dirname]).join("\n");
       }
 
-      return (["Path not found: " + dirname]).join("\n");
+      return (["Путь не найден: " + dirname]).join("\n");
     },
 
     cat: function(file) {
       if ( !file ) {
-        return (["You need to supply argument: filename"]).join("\n");
+        return (["Вы должны указать аргумент: файл"]).join("\n");
       }
 
       var filename = parsepath(file);
       var iter = getiter(filename);
       if ( !iter ) {
-        return (["File not found: " + filename]).join("\n");
+        return (["Файл не найден: " + filename]).join("\n");
       }
 
       return iter.content;
     },
 
     cwd: function() {
-      return (['Current directory: ' + _cwd]).join("\n");
+      return (['Текущая директория: ' + _cwd]).join("\n");
     },
 
     clear: function() {
@@ -113,11 +113,11 @@
 
         default :
           if ( key.length ) {
-            out = ['Invalid key: ' + key];
+            out = ['Неверный ключ: ' + key];
           } else {
             out = [
-              "Contact information:\n",
-              'Name:      Alex',
+              "Контактная информация:\n",
+              'Имя:       Alex',
               'Email:     arahnidous@gmail.com',
               'Github:    https://github.com/SPIDER-L33T/',
               'LinkedIn:  https://www.linkedin.com/in/александр-горелов-3033393b',                         
@@ -148,9 +148,9 @@
             out = ['Invalid key: ' + key];
           } else {
             out = [
-              "Available files:\n",
-              'kms:       KMS activator',
-              'antivirus: ESET antivirus'
+              "Доступные файлы:\n",
+              'kms:       KMS активатор',
+              'antivirus: ESET антифирус'
             ];
           }
           break;
@@ -162,21 +162,22 @@
 	about: function(){
 		var out = [
 		'My name is Alexander.',
-		'Since 2001 to 2006 proprietor and founder of internet provider "Online Telecom". Now I am a Head of IT Department in "ROSTA" company.',
+		'С 2001 по 2006 основатель и учредитель интернет провайдера "Online Telecom". На данный момент работаю начальником отдела ИТ в компании "РОСТА".',
 		];
 		return out.join("\n");
 	},
 	
 	facts: function(){
 		var out = [
-		'- Outside of my work I`am a security researcher, web developer and instructor of gunnery.',
-		'- As a hobby, I`m developed a home automation system and secure transmission of data on public communication lines (Internet).',
-		'- I`m working on building a fault-tolerant peer-to-peer network.',
-        '- I like to look for vulnerabilities in strange computer networks ("hack in the black box").',
+		'- Вне работы я security-аудитор, web-разработчик и инструктор по стрельбе.',
+		'- В качестве хобби, разработал свою систему домашней автоматизации и систему защищенной передачи данных по открытым линиям связи (Internet).',
+		'- Работаю над созданием отказоустойчивой peer-to-peer сети.',
+        '- Мне нравится искать уязвимости в неизвестных компьютерных сетях ("взлом из чёрного ящика").',
         '- I`m interecting cluster/cloud computing, hashcracking and Android-software developing.',
-        '- I like computer games and do not consider it shameful. In the games I prefer strategy and first person shooters.',
-        '- I can with my eyes closed disassemble and reassemble the Kalashnikov assault rifle.',
-        '- I like outdoor recreation and the smell of burnt gunpowder.    ',
+        '- Я интересуюсь кластерными/облачными вычислениями, хэшкрекингом и разработкой приложений для платформы Android.',
+        '- Мне нравятся компьютерные игры и я не считаю это зазорным. В играх предпочитаю стратегии и шутеры от первого лица.',
+        '- С закрытыми глазами могу разобрать/собрать автомат Калашникова.',
+		'- Нравится отдых на природе и запах жженого пороха.',
 		];
 		return out.join("\n");
 	},
