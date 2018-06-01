@@ -502,7 +502,7 @@
 	document.getElementById('audiotagon').play();
 	print("Loading kernel ....................................................\n");
     print("Initializing SPIDER-L33T shell v1.0 ....................................................\n");	
-    print("Copyright (c) 2017 SPIDER-L33T <arahnidous@gmail.com>\n\n", true);	
+    print("Copyright (c) 2018 SPIDER-L33T <arahnidous@gmail.com>\n\n", true);	
 print("███████╗██████╗░██╗██████╗░███████╗██████╗░░░░░░░██╗░░░░░██████╗░██████╗░████████╗\n", true);
 print("██╔════╝██╔══██╗██║██╔══██╗██╔════╝██╔══██╗░░░░░░██║░░░░░╚════██╗╚════██╗╚══██╔══╝\n", true);
 print("███████╗██████╔╝██║██║░░██║█████╗░░██████╔╝█████╗██║░░░░░░█████╔╝░█████╔╝░░░██║░░░\n", true);
