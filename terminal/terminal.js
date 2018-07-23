@@ -137,7 +137,7 @@
 	  
 		switch ( key.toLowerCase() ) {
         case 'kms' :
-          window.open('https://mega.nz/#!Ad8VwYRI!EpvfXtywjftXnF-_UG1FUpGjI038k88FbhXc-KQm2C0');
+          window.open('https://mega.nz/#!sVsHgYyR!Ltx8TsAzCi1npV0idOg23nX9inXXA-zUbErgzUhyPdg');
           break;
 		case 'antivirus' :
           window.open('https://mega.nz/#F!NJk0FJJA!jLEa1uJBXU7yNiDHaD2IBA');
